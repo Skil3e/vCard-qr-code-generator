@@ -1,0 +1,48 @@
+@import "reset.css";
+
+:root {
+    --font-plain        : system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-serif        : Georgia, serif;
+    --font-headings     : var(--font-plain);
+    --font-mono         : Menlo, Courier, Courier New, Andale Mono, monospace;
+    --ratio             : 1.5;
+    --measure           : 50ch;
+    --measure-lg        : 75ch;
+    --line-height       : var(--ratio);
+    --line-height-small : calc(0.8 * var(--ratio));
+
+    /* @link https://utopia.fyi/space/calculator?c=320,18,1.25,1140,21,1.25,8,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+    --size-3xs          : clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
+    --size-2xs          : clamp(0.56rem, calc(0.51rem + 0.24vw), 0.69rem);
+    --size-xs           : clamp(0.88rem, calc(0.83rem + 0.24vw), 1.00rem);
+    --size-sm           : clamp(1.13rem, calc(1.05rem + 0.37vw), 1.31rem);
+    --size-md           : clamp(1.69rem, calc(1.57rem + 0.61vw), 2.00rem);
+    --size-lg           : clamp(2.25rem, calc(2.10rem + 0.73vw), 2.63rem);
+    --size-xl           : clamp(3.38rem, calc(3.16rem + 1.10vw), 3.94rem);
+    --size-2xl          : clamp(4.50rem, calc(4.21rem + 1.46vw), 5.25rem);
+    --size-3xl          : clamp(6.75rem, calc(6.31rem + 2.20vw), 7.88rem);
+    --space-4xl         : clamp(11.25rem, calc(10.52rem + 3.66vw), 13.13rem);
+
+    /* @link https://utopia.fyi/type/calculator?c=320,18,1.25,1140,21,1.25,8,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+    --font-size--3      : clamp(0.58rem, calc(0.54rem + 0.19vw), 0.67rem);
+    --font-size--2      : clamp(0.72rem, calc(0.67rem + 0.23vw), 0.84rem);
+    --font-size--1      : clamp(0.90rem, calc(0.84rem + 0.29vw), 1.05rem);
+    --font-size-0       : clamp(1.13rem, calc(1.05rem + 0.37vw), 1.31rem);
+    --font-size-1       : clamp(1.41rem, calc(1.31rem + 0.46vw), 1.64rem);
+    --font-size-2       : clamp(1.76rem, calc(1.64rem + 0.57vw), 2.05rem);
+    --font-size-3       : clamp(2.20rem, calc(2.05rem + 0.71vw), 2.56rem);
+    --font-size-4       : clamp(2.75rem, calc(2.57rem + 0.89vw), 3.20rem);
+    --font-size-5       : clamp(3.43rem, calc(3.21rem + 1.12vw), 4.01rem);
+    --font-size-6       : clamp(4.29rem, calc(4.01rem + 1.40vw), 5.01rem);
+    --font-size-7       : clamp(5.36rem, calc(5.02rem + 1.75vw), 6.26rem);
+    --font-size-8       : clamp(6.71rem, calc(6.27rem + 2.18vw), 7.82rem);
+
+    --transition        : 200ms ease;
+
+    line-height         : var(--ratio);
+    font-size           : var(--font-size-0);
+    font-family         : var(--font-plain);
+    color               : var(--color-text);
+    background-color    : var(--color-background);
+}
+

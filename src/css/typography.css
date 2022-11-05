@@ -1,0 +1,29 @@
+:where(h1,h2,h3,h4,h5,h6) {
+    font-family     : var(--font-headings);
+    line-height     : 1.2;
+    max-inline-size : var(--measure);
+}
+
+:where(h1, .h1) {
+    font-size : var(--font-size-5);
+}
+
+:where(h2, .h2) {
+    font-size : var(--font-size-4);
+}
+
+:where(h3, .h3) {
+    font-size : var(--font-size-3);
+}
+
+:where(h4, .h4) {
+    font-size : var(--font-size-2);
+}
+
+:where(h5, .h5) {
+    font-size : var(--font-size-1);
+}
+
+:where(h6, .h6) {
+    font-size : var(--font-size-0);
+}

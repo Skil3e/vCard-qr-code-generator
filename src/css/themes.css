@@ -1,0 +1,64 @@
+:root {
+    color-scheme            : light;
+    --color-brand           : hsl(173deg 100% 40%);
+    --color-accent          : hsl(173deg 100% 40%);
+    --color-accent-hover    : hsl(173deg 100% 30%);
+    --color-accent-contrast : hsl(173deg 0% 10%);
+    --color-accent-alpha    : hsla(173deg 100% 50% / 0.4);
+    --color-background      : hsl(250deg 32% 95%);
+    --color-surface-1       : hsl(250deg 30% 90%);
+    --color-surface-2       : hsl(250deg 29% 85%);
+    --color-surface-3       : hsl(250deg 30% 80%);
+    --color-headline        : hsl(250deg 35% 10%);
+    --color-text            : hsl(250deg 11% 10%);
+    --color-text-dimmed     : hsl(250deg 11% 15%);
+    --color-border          : hsl(250deg 10% 70%);
+    --color-border-alpha    : hsla(250deg 10% 85% / 0.15);
+    --color-error           : hsl(343deg 80% 46%);
+}
+
+@media (prefers-color-scheme : dark) {
+    :root {
+        color-scheme            : dark;
+        ---color-brand          : hsl(173deg 100% 40%);
+        --color-accent          : hsl(173deg 100% 40%);
+        --color-accent-hover    : hsl(173deg 100% 30%);
+        --color-accent-contrast : hsl(173deg 0% 10%);
+        --color-accent-alpha    : hsla(130deg 45% 50% / 0.4);
+        --color-background      : hsl(254deg 32% 8%);
+        --color-surface-1       : hsl(250deg 30% 13%);
+        --color-surface-2       : hsl(250deg 29% 23%);
+        --color-surface-3       : hsl(250deg 30% 34%);
+        --color-headline        : hsl(213deg 33% 6%);
+        --color-text            : hsl(250deg 11% 95%);
+        --color-text-dimmed     : hsl(250deg 11% 85%);
+        --color-border          : hsl(250deg 20% 30%);
+        --color-border-alpha    : hsla(250deg 20% 17% / 0.15);
+        --color-error           : hsl(343deg 80% 46%);
+    }
+}
+
+[data-theme="dark"] {
+    color-scheme            : dark;
+    ---color-brand          : hsl(173deg 100% 40%);
+    --color-accent          : hsl(173deg 100% 40%);
+    --color-accent-hover    : hsl(173deg 100% 30%);
+    --color-accent-contrast : hsl(173deg 0% 10%);
+    --color-accent-alpha    : hsla(130deg 45% 50% / 0.4);
+    --color-background      : hsl(254deg 32% 8%);
+    --color-surface-1       : hsl(250deg 30% 13%);
+    --color-surface-2       : hsl(250deg 29% 23%);
+    --color-surface-3       : hsl(250deg 30% 34%);
+    --color-headline        : hsl(213deg 33% 6%);
+    --color-text            : hsl(250deg 11% 95%);
+    --color-text-dimmed     : hsl(250deg 11% 85%);
+    --color-border          : hsl(250deg 20% 30%);
+    --color-border-alpha    : hsla(250deg 20% 17% / 0.15);
+    --color-error           : hsl(343deg 80% 46%);
+}
+
+
+[data-theme] {
+    color            : var(--color-text);
+    background-color : var(--color-background);
+}

@@ -1,0 +1,9 @@
+@import "css/base.css";
+@import "css/themes.css";
+@import "css/typography.css";
+@import "css/layout.css";
+
+footer {
+    text-align : center;
+    padding    : var(--size-sm);
+}

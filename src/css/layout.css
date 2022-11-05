@@ -1,0 +1,48 @@
+.flow > :where(:not(:first-child)) {
+    margin-block-start : var(--flow-space, 1em);
+}
+
+[data-flow-space="sm"] {
+    --flow-space : 0.75em;
+}
+
+[data-flow-space="lg"] {
+    --flow-space : 1.5em;
+}
+
+.box {
+    --_box-padding : var(--size-lg);
+    padding-inline : var(--_box-padding);
+    padding-block  : var(--_box-padding);
+}
+
+
+.container {
+    --_container-inline-size : var(--measure);
+    box-sizing               : content-box;
+    max-inline-size          : var(--_container-inline-size);
+    margin-inline            : auto;
+    padding-inline           : var(--size-md);
+}
+
+.container[data-container-size='lg'] {
+    --_container-inline-size : var(--measure-lg)
+}
+
+.cluster {
+    --_cluster-gap : var(--size-3xs);
+    display        : flex;
+    flex-wrap      : wrap;
+    gap            : var(--_cluster-gap);
+}
+
+.grid {
+    --_grid-gap           : var(--flow-space, var(--size-sm)) var(--size-sm);
+    display               : grid;
+    grid-template-columns : repeat(auto-fill, minmax(var(--space-4xl), 1fr));
+    gap                   : var(--_grid-gap);
+}
+
+.grid-column-span {
+    grid-column : 1 / -1;
+}
