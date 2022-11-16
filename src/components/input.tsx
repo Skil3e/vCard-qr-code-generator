@@ -1,12 +1,11 @@
 import { forwardRef, HTMLProps, Ref } from "react";
 import { FieldErrorsImpl } from "react-hook-form";
-import { Inputs } from "../ulitities";
 
 type TInputField = HTMLProps<HTMLInputElement> & {
     wrapperClassName?: string
     optional?: boolean
     label?: string
-    errors: Partial<FieldErrorsImpl<Inputs>>
+    errors: Partial<FieldErrorsImpl<any>>
 }
 
 export const InputField = forwardRef(

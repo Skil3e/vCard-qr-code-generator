@@ -16,6 +16,9 @@
     padding-block  : var(--_box-padding);
 }
 
+[data-box-spacing="sm"] {
+    --_box-padding : var(--size-md);
+}
 
 .container {
     --_container-inline-size : var(--measure);
@@ -30,7 +33,7 @@
 }
 
 .cluster {
-    --_cluster-gap : var(--size-3xs);
+    --_cluster-gap : var(--size-xs);
     display        : flex;
     flex-wrap      : wrap;
     gap            : var(--_cluster-gap);

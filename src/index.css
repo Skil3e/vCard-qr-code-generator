@@ -3,7 +3,7 @@
 @import "css/typography.css";
 @import "css/layout.css";
 
-footer {
+footer, header {
     text-align : center;
     padding    : var(--size-sm);
 }
